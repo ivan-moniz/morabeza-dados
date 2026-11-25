@@ -33,7 +33,7 @@ def ler_clientes_sqlite(caminho):
 def ler_promocoes_json(caminho):
     """O ficheiro imita a resposta de uma API: os registos estão em 'dados'.
     Se 'estado' não for 'ok', levanta ValueError."""
-    json_data = json.load(open(caminho))  # noqa: F841
+    json_data = json.load(open(caminho, "r", encoding="utf-8"))  # noqa: F841
     if json_data["estado"] != "ok":
         raise ValueError("Estado não é 'ok'")
     return pd.DataFrame(json_data["dados"])
