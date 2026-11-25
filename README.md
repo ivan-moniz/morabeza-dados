@@ -36,4 +36,5 @@ python -m morabeza.resumo data/vendas_amostra.csv
 
 ### Sobre min
 Formando: Ivan Moniz
+
 Ilha Favorita: Santiago
